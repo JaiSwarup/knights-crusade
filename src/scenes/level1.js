@@ -30,7 +30,6 @@ export async function level1(k){
     let key;
     let chest;
     let coin;
-    console.log(spawnPoints)
     for (const point of spawnPoints){
         if (point["name"] === "player") 
             player.setPosition(point.x, point.y);
