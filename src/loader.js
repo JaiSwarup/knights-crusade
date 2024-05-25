@@ -3,6 +3,7 @@ import k from "./kaboomCtx.js";
 export const loader = {
     fonts : () =>{},
     sprites : () => {
+        k.loadRoot(".")
         k.loadSpriteAtlas("/sprites/tilemap.png", {
             "coin" :{
                 x : 32,
@@ -97,7 +98,7 @@ export const loader = {
             },
             
         });
-        k.loadSprite("player", "sprites/player.png", {
+        k.loadSprite("player", "/sprites/player.png", {
             sliceX : 9,
             sliceY : 4,
             anims : {
@@ -110,15 +111,15 @@ export const loader = {
                 "damage" : {from : 24,to : 25},
             }
         });
-        k.loadSprite("level-1", "sprites/level-1.png");
-        k.loadSprite("slash", "sprites/warriorslashfx-Sheet.png", {
+        k.loadSprite("level-1", "/sprites/level-1.png");
+        k.loadSprite("slash", "/sprites/warriorslashfx-Sheet.png", {
             sliceX : 9,
             sliceY : 1,
             anims : {
                 "attack" : {from : 0,to : 8,},
             }
         });
-        k.loadSprite("dialog", "sprites/dialog.png");
-        k.loadSprite("background", "sprites/background.png");
+        k.loadSprite("dialog", "/sprites/dialog.png");
+        k.loadSprite("background", "/sprites/background.png");
     }
 }
