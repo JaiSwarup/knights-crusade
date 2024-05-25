@@ -3,7 +3,7 @@ import k from "./kaboomCtx.js";
 export const loader = {
     fonts : () =>{},
     sprites : () => {
-        k.loadSpriteAtlas("/sprites/tilemap.png", {
+        k.loadSpriteAtlas("sprites/tilemap.png", {
             "coin" :{
                 x : 32,
                 y : 0,
